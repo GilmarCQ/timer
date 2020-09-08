@@ -109,13 +109,9 @@ var TSTimer = (function () {
         console.log(Notification.permission);
         console.log(titulo, mensaje);
         showNotification = (titulo, mensaje) => {
-            var dts = Math.floor(Date.now());
             const notification = new Notification(titulo, {
                 body: mensaje,
-                icon: 'http://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png',
-                image: 'http://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png',
-                badge: 'http://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png',
-                timestamp: dts
+                icon: 'http://www.pngall.com/wp-content/uploads/2017/05/Alert-Download-PNG.png'
             });
         }
         if (Notification.permission === "granted") {
